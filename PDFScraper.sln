@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27703.2018
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PDFScrape", "PDFScrape\PDFScrape.csproj", "{260ACC1F-9BF8-4A39-9D8B-66906569D10F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PDFScrapeTest", "PDFScrapeTest\PDFScrapeTest.csproj", "{45E0E88E-D6AA-491E-AE72-55FFDD83DCAB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PDFScraper", "PDFScraper\PDFScraper.csproj", "{D3597281-EAAD-48F0-A5C8-575565665B8A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{260ACC1F-9BF8-4A39-9D8B-66906569D10F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{260ACC1F-9BF8-4A39-9D8B-66906569D10F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{260ACC1F-9BF8-4A39-9D8B-66906569D10F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{260ACC1F-9BF8-4A39-9D8B-66906569D10F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{45E0E88E-D6AA-491E-AE72-55FFDD83DCAB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{45E0E88E-D6AA-491E-AE72-55FFDD83DCAB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{45E0E88E-D6AA-491E-AE72-55FFDD83DCAB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{45E0E88E-D6AA-491E-AE72-55FFDD83DCAB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D3597281-EAAD-48F0-A5C8-575565665B8A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D3597281-EAAD-48F0-A5C8-575565665B8A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D3597281-EAAD-48F0-A5C8-575565665B8A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D3597281-EAAD-48F0-A5C8-575565665B8A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2EC77CC5-8BDE-4DF5-B6E3-A59130507CD3}
+	EndGlobalSection
+EndGlobal

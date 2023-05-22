@@ -1,0 +1,358 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{D3597281-EAAD-48F0-A5C8-575565665B8A}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>PDFScraper</RootNamespace>
+    <AssemblyName>PDFScraper</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.BonusSkins.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Charts.v19.1.Core, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Data.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.DataAccess.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.DataAccess.v19.1.UI, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Dialogs.v19.1.Core, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Images.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Office.v19.1.Core, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Printing.v19.1.Core, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.RichEdit.v19.1.Core, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Spreadsheet.v19.1.Core, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Utils.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Utils.v19.1.UI, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraBars.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraCharts.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraDialogs.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGrid.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraLayout.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraNavBar.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraPrinting.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraRichEdit.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraSpreadsheet.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraTreeList.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.12.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="ObjectListView, Version=2.9.1.1072, Culture=neutral, PublicKeyToken=b1c5bf581481bcd4, processorArchitecture=MSIL">
+      <HintPath>..\packages\ObjectListView.Official.2.9.1\lib\net20\ObjectListView.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="SkinSoft.OSSkin, Version=3.2.0.0, Culture=neutral, PublicKeyToken=669afa176ca71378, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WeifenLuo.WinFormsUI.Docking, Version=3.0.6.0, Culture=neutral, PublicKeyToken=5cded1a1a0a7b481, processorArchitecture=MSIL">
+      <HintPath>..\packages\DockPanelSuite.3.0.6\lib\net40\WeifenLuo.WinFormsUI.Docking.dll</HintPath>
+    </Reference>
+    <Reference Include="WeifenLuo.WinFormsUI.Docking.ThemeVS2015, Version=3.0.6.0, Culture=neutral, PublicKeyToken=5cded1a1a0a7b481, processorArchitecture=MSIL">
+      <HintPath>..\packages\DockPanelSuite.ThemeVS2015.3.0.6\lib\net40\WeifenLuo.WinFormsUI.Docking.ThemeVS2015.dll</HintPath>
+    </Reference>
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Forms2\Docks\DockControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms2\Docks\ModelDock.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms2\Docks\ModelDock.Designer.cs">
+      <DependentUpon>ModelDock.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms2\MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms2\MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\LaunchForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\LaunchForm.Designer.cs">
+      <DependentUpon>LaunchForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Macros\MacroDock.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Macros\MacroDock.Designer.cs">
+      <DependentUpon>MacroDock.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Macros\MacroForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Macros\MacroForm.Designer.cs">
+      <DependentUpon>MacroForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Macros\MacroPlayingControlForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Macros\MacroPlayingControlForm.Designer.cs">
+      <DependentUpon>MacroPlayingControlForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Macros\MacroRecordingBeginBranchingForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Macros\MacroRecordingBeginBranchingForm.Designer.cs">
+      <DependentUpon>MacroRecordingBeginBranchingForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Macros\MacroRecordingBeginRepetitionForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Macros\MacroRecordingBeginRepetitionForm.Designer.cs">
+      <DependentUpon>MacroRecordingBeginRepetitionForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Macros\MacroRecordingControlForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Macros\MacroRecordingControlForm.Designer.cs">
+      <DependentUpon>MacroRecordingControlForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Macros\MacroRecordingDataInputForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Macros\MacroRecordingDataInputForm.Designer.cs">
+      <DependentUpon>MacroRecordingDataInputForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Macros\MacroRecordingNextBranchForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Macros\MacroRecordingNextBranchForm.Designer.cs">
+      <DependentUpon>MacroRecordingNextBranchForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Model\ExtractorForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Model\ExtractorForm.Designer.cs">
+      <DependentUpon>ExtractorForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Model\ExtractorRegionForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Model\ExtractorRegionForm.Designer.cs">
+      <DependentUpon>ExtractorRegionForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Model\ModelDock.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Model\ModelDock.Designer.cs">
+      <DependentUpon>ModelDock.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Model\ModelForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Model\ModelForm.Designer.cs">
+      <DependentUpon>ModelForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ModelPropertiesDock.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ModelPropertiesDock.Designer.cs">
+      <DependentUpon>ModelPropertiesDock.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ModelRegionDock.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ModelRegionDock.Designer.cs">
+      <DependentUpon>ModelRegionDock.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ModelTestScrapeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ModelTestScrapeForm.Designer.cs">
+      <DependentUpon>ModelTestScrapeForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Overlay\OverlayMacroCursorText.cs" />
+    <Compile Include="Forms\Overlay\OverlayMacroForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Overlay\OverlayMacroForm.Designer.cs">
+      <DependentUpon>OverlayMacroForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Overlay\OverlayMessageForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Overlay\OverlayMessageForm.Designer.cs">
+      <DependentUpon>OverlayMessageForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Scraper\ScraperForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Scraper\ScraperForm.Designer.cs">
+      <DependentUpon>ScraperForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Forms2\Docks\ModelDock.resx">
+      <DependentUpon>ModelDock.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms2\MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\LaunchForm.resx">
+      <DependentUpon>LaunchForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Macros\MacroDock.resx">
+      <DependentUpon>MacroDock.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Macros\MacroForm.resx">
+      <DependentUpon>MacroForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Macros\MacroPlayingControlForm.resx">
+      <DependentUpon>MacroPlayingControlForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Macros\MacroRecordingBeginBranchingForm.resx">
+      <DependentUpon>MacroRecordingBeginBranchingForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Macros\MacroRecordingBeginRepetitionForm.resx">
+      <DependentUpon>MacroRecordingBeginRepetitionForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Macros\MacroRecordingControlForm.resx">
+      <DependentUpon>MacroRecordingControlForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Macros\MacroRecordingDataInputForm.resx">
+      <DependentUpon>MacroRecordingDataInputForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Macros\MacroRecordingNextBranchForm.resx">
+      <DependentUpon>MacroRecordingNextBranchForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Model\ExtractorForm.resx">
+      <DependentUpon>ExtractorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Model\ExtractorRegionForm.resx">
+      <DependentUpon>ExtractorRegionForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Model\ModelDock.resx">
+      <DependentUpon>ModelDock.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Model\ModelForm.resx">
+      <DependentUpon>ModelForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ModelPropertiesDock.resx">
+      <DependentUpon>ModelPropertiesDock.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ModelRegionDock.resx">
+      <DependentUpon>ModelRegionDock.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ModelTestScrapeForm.resx">
+      <DependentUpon>ModelTestScrapeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Overlay\OverlayMacroForm.resx">
+      <DependentUpon>OverlayMacroForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Overlay\OverlayMessageForm.resx">
+      <DependentUpon>OverlayMessageForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Scraper\ScraperForm.resx">
+      <DependentUpon>ScraperForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\PDFScrape\PDFScrape.csproj">
+      <Project>{260ACC1F-9BF8-4A39-9D8B-66906569D10F}</Project>
+      <Name>PDFScrape</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Media\macro_play.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Media\macro_resume.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Media\icons8-3d-model-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Media\macro_stop_repeating.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Media\macro_pause.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Media\macro_record.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Media\macro_record_branching.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Media\macro_record_repeating.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Media\macro_add_branch.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Media\macro_add_input.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Media\macro_stop.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Media\macro_unpause.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Media\macro_stop_branching.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Forms\Docking\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
